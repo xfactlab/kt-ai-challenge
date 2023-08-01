@@ -63,8 +63,7 @@ def main(args):
     data = utils.read_jsonlines(input_file)
 
 
-    cnt = 0
-    for ins in data:
+    for ins in tqdm(data):
         kor_que = ins['kor_question']
 
         # checking whether there is an answer
@@ -81,13 +80,6 @@ def main(args):
 
         ins['kor_infer'] = res_context
         jsonl_writer.write_json_line(ins)
-        cnt += 1
-        if cnt % 5 == 0:
-            print(f'prompt : ')
-            print(prompt)
-            print(f'res_context : ')
-            print(res_context)
-            print('----')
 
 
 if __name__ == "__main__":
