@@ -3,7 +3,7 @@ import re
 import json
 
 
-def read_json(file_path):
+def read_jsonlines(file_path):
     data = []
     with jsonlines.open(file_path) as reader:
         for line in reader:
