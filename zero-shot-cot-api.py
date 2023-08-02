@@ -48,6 +48,11 @@ def get_gsm8k_one_shot_cot(pre_prompt, que):
     return prompt
 
 
+def get_gsm8k_zs_cot(que):
+    prompt = f"질문: {que} 정답: 질문을 단계적으로 풀어보면, "
+    return prompt
+
+
 def get_body(prompt, body_temp):
     body_temp["utterance"] = prompt
     return json.dumps(body_temp)
@@ -82,7 +87,7 @@ def main(args):
         if len(test[0]) != len(kor_que):
             continue
 
-        prompt = get_gsm8k_one_shot_cot(PROMPT1, kor_que)
+        prompt = get_gsm8k_zs_cot(kor_que)
 
         body = get_body(prompt, BODY_TEMP)
         response = model.generate(body)
@@ -104,13 +109,13 @@ if __name__ == "__main__":
 
     # Output location
     parser.add_argument("--output_path", type=str, default='/userhomes/philhoon/kt-ai-challenge/result', help="Path to the output directory")
-    parser.add_argument("--output_file_name", type=str, default='one-shot-cot-result-Ko-gsm8k-test.jsonl', help="Path to the output directory")
+    parser.add_argument("--output_file_name", type=str, default='zero-shot-cot-result-ko-gsm8k-test.jsonl', help="Path to the output directory")
 
     args = parser.parse_args()
     main(args)
 
-# python one-shot-cot-api.py \
+# python zero-shot-cot-api.py \
 # --api_path /userhomes/philhoon/kt-ai-challenge/api.json \
 # --input_file /userhomes/philhoon/kt-ai-challenge/data/openai-gpt-3.5-turbo-0301-2048-0.0-KOR-gsm8k-test.jsonl \
-# --output_path /userhomes/philhoon/kt-ai-challenge/result
-# --output_file_name one-shot-cot-result-ko-gsm8k-test.jsonl
+# --output_path /userhomes/philhoon/kt-ai-challenge/result \
+# --output_file_name zero-shot-cot-result-ko-gsm8k-test.jsonl
