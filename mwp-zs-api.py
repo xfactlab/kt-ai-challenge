@@ -82,7 +82,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     main(args)
 
-# python evalute_api.py \
+# python mwp-zs-api.py \
 # --api_path /userhomes/philhoon/kt-ai-challenge/api.json \
 # --input_file /userhomes/philhoon/kt-ai-challenge/data/public_mwp_data_v2_preprocess.jsonl \
 # --output_path /userhomes/philhoon/kt-ai-challenge/result/zero-shot-public_mwp_data_v2_preprocess
