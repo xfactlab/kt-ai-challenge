@@ -36,7 +36,6 @@ def get_body(prompt, body_temp):
 
 
 def get_gsm8k_build_data_with_one_shot_cot_finetuning(kor_que, kor_ans, ans_s, PROMPT1):
-    PROMPT1
     prompt = f"질문: {kor_que} 풀이: "
     output = f"{kor_ans} 정답: {ans_s}"
 
