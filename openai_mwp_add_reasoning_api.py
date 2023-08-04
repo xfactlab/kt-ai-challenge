@@ -79,7 +79,7 @@ def main(args):
     jsonl_writer = utils.JSONLWriter(output_file)
 
     # Reading input_file
-    data = utils.read_json(input_file)
+    data = utils.read_jsonlines(input_file)
 
     for instance in tqdm(data):
         query = instance['question']
