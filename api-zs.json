@@ -1,0 +1,15 @@
+{
+  "url" : "https://aiapi.genielabs.ai/lets-api/service/instance/009/ict5ap6i/service",
+  "headers": {
+    "clientId": "1b9fff09-d56f-4e2d-8442-b70c593d919c",
+    "clientSignature": "71fcc268e15c9be20d47954668efb5413cf749529e0d5a112a5ddda07728af2b",
+    "timestamp": "20230803170155014",
+    "Content-Type": "application/json"
+  },
+  "body" : {
+    "serviceInstanceId":  "ict5ap6i",
+    "nluType" : "009",
+    "apiType" : "002",
+    "utterance" : ""
+  }
+}
