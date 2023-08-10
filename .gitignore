@@ -1,7 +1,7 @@
 .ipynb_checkpoints/
 
 # jupyternotebooks
-notebooks/*
+notebooks
 
 # API file
 api
