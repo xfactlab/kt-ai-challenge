@@ -1,13 +1,21 @@
 .ipynb_checkpoints/
+
+# jupyternotebooks
+notebooks/*
+
+# API file
 api
 api.yaml
-api.json
-api-peft1.json
-api-peft2.json
-api-peft3.json
+api/api.json
+api/api-peft1.json
+api/api-peft2.json
+api/api-peft3.json
 api-peft4.json
-api-openai.yaml
-api-zs.json
+api/api-openai.yaml
+api/api-zs.json
+
+# result file
+result
 
 frontend/.DS_Store
 frontend/node_modules
