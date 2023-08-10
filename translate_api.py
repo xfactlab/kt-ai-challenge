@@ -17,7 +17,7 @@ def get_trans_msg(context):
     msg = [
         {
             "role": "system",
-            "content": "Translate given setences into Korean."
+            "content": "Translate given sentence into Korean."
         },
         {
             "role": "user",
