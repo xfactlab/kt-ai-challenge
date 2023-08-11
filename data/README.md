@@ -9,14 +9,7 @@ https://aifactory.space/task/2528/overview
 ![image](https://github.com/xfactlab/kt-ai-challenge/assets/18394356/847f8f58-0570-4771-aa94-2da02454ef8e)
 ### Video
 https://youtu.be/K9_glUcdj1E 
-### Description
-#### data 
-- `data` directory contains datasets used for training/inference on KT'S 믿:음 
-- For further details and descriptions, check out README.md in `data` directory
 
-#### frontend 
-- `frontend` directory contains scripts and codes used for Demo.
-- For further details and descriptions, check out README.md in `frontend` directory
 
 ## License
 Apache 2.0 license
