@@ -2,7 +2,22 @@
 
 ## Folder description
 ### Custom
+```
+└── kt_text.txt
+```
 ### ko-strategyqa
+```python
+├── inference
+│   ├── strategy-cot-v2.xlsx
+│   ├── strategy-onlyq-v2.xlsx
+│   ├── strategy-peft-cot-v2.xlsx
+│   ├── strategy-peft-v2.xlsx
+│   └── strategy-zs-v2.xlsx
+└── raw
+    ├── ko-strategyqa-full-kt-v2-shuf.csv
+    ├── ko-strategyqa-test-v2.csv
+    └── ko-strategyqa-train-v2.csv
+```
 ### reasoning-data
 ```
 ├── kor-addsub : Korean version of AddSub dataset (Train-316/Test-79) 
