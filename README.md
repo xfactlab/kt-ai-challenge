@@ -9,14 +9,18 @@ https://aifactory.space/task/2528/overview
 ![image](https://github.com/xfactlab/kt-ai-challenge/assets/18394356/847f8f58-0570-4771-aa94-2da02454ef8e)
 ### Video
 https://youtu.be/K9_glUcdj1E 
-### Description
+### Folder Descriptions
 #### data 
 - `data` directory contains datasets used for training/inference on KT'S 믿:음 
 - For further details and descriptions, check out README.md in `data` directory
-
 #### frontend 
 - `frontend` directory contains scripts and codes used for Demo.
 - For further details and descriptions, check out README.md in `frontend` directory
-
+#### src
+- `src` directory contains utility functions for calling apis/files.
+### Script Descriptions
+- kt-evaluate-api.py : evaluation script for default/trained KT믿:음 models on reasoning dataset 
+- reasoning_api.py : reasoning script for adding rationales behind the answer using LLM apis
+- translate_api.py : translation script from English to Korean using LLM apis
 ## License
 Apache 2.0 license
